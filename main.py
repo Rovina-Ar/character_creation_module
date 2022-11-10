@@ -4,7 +4,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 
 def attack(char_name: str, char_class: str) -> str:
-    '''Функция выводит количество нанесённого урона.'''
+    """Функция выводит количество нанесённого урона."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон '
                 f'противнику равный {5 + randint(3, 5)}')
@@ -18,7 +18,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
-    '''Функия выводит количесвто заблокированного урона.'''
+    """Функия выводит количесвто заблокированного урона."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
@@ -29,7 +29,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
-    '''Функция выводит название применяемего умения.'''
+    """Функция выводит название применяемего умения."""
     if char_class == 'warrior':
         return (f'{char_name} применил'
                 f'специальное умение «Выносливость {80 + 25}»')
@@ -41,7 +41,7 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
-    '''Функция предлагает игроку потренироваться.'''
+    """Функция предлагает игроку потренироваться."""
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -66,7 +66,7 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
-    '''Функция предлагает выбрать класс.'''
+    """кция предлагает выбрать класс."""
     approve_choice: str = None
     char_class: str = None
     while approve_choice != 'y':
